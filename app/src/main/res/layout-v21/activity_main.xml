@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+        <Toolbar
+
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:minHeight="?attr/actionBarSize"
+            app:actionViewClass="android.support.v7.widget.SearchView"
+            tools:targetApi="lollipop" />
+
+
+        <ListView
+            android:id="@+id/listView1"
+
+            style="@style/TextAppearance.AppCompat.Display1"
+            android:layout_width="wrap_content"
+            android:layout_height="590dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="3dp"
+            android:choiceMode="singleChoice"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="66dp"
+
+
+            android:scrollbarStyle="outsideInset">
+
+
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/Audio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#A4A6A4"
+                    android:fontFamily="sans-serif-black"
+                    android:text="AUDIOS"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/Video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:text="VIDEOS"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <item
+        android:id="@+id/search"
+        android:title="search"
+        android:icon="@drawable/searchicon"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.widget.SearchView" />
+
+
+    <item
+        android:id="@+id/item1"
+        android:title="Sort"
+        app:showAsAction="never">
+
+        <menu>
+            <group
+                android:id="@+id/sortgroup"
+                android:checkableBehavior="single"
+                >
+
+                <item
+                    android:id="@+id/Shuffle"
+                    android:title="Shuffled"
+                    android:checked="true"
+                    />
+
+                <item
+                    android:id="@+id/Asscending"
+                    android:title="Asscending"
+                    />
+
+                <item
+                    android:id="@+id/Descending"
+                    android:title="Descending"
+                    />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+</menu>
